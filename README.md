@@ -1,2 +1,2 @@
 # bookbot
-Python bookbot application for searching files or books
+BookBot is my first project!
