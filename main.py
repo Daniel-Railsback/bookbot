@@ -12,8 +12,7 @@ def get_book_text(path): # Function to open and read file
     try: 
         with open(path) as f: # Open file path saved in path (line 2)
             text = f.read() # Read bytes from file.  This allows line 3 not to error
-            f.close()  # You must close the file manually
-            return text
+            return text #With auto closes file
     except Exception as msg:
         print(msg)
 
