@@ -12,7 +12,7 @@ def get_book_text(path): # Function to open and read file
     try: 
         with open(path) as f: # Open file path saved in path (line 2)
             text = f.read() # Read bytes from file.  This allows line 3 not to error
-            f.close()  # You must close the file manually
+            # f.close()  # This is how you close the file.  It is no longer needed but important to understand
             return text
     except Exception as msg:
         print(msg)
@@ -21,6 +21,7 @@ def get_book_text(path): # Function to open and read file
 
 def count_words(text):
     try:
+        # Split 
         words = text.split()
         num_words = len(words)
         return num_words
